@@ -1,0 +1,226 @@
+/* ==========================================
+   STAT CARDS MAIN CONTAINER & GRID FIXES
+   ========================================== */
+.stats-container {
+  padding: 24px;
+}
+
+/* Antd Grid Flexbox Fix for Equal Height Columns */
+.stats-container .ant-row {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.stats-container .ant-col {
+  display: flex;
+}
+
+/* ==========================================
+   CARD BASE STYLES (SAME HEIGHT & WIDTH)
+   ========================================== */
+.stat-card {
+  width: 100%;
+  min-height: 220px !important; /* Min-height used for flexibility on mobile */
+  background:#080808f7 !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Internal Layout Balance */
+.stat-card .ant-card-body {
+  padding: 20px !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+/* Subtle Hover Glow & Lift Effect */
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+}
+
+/* ==========================================
+   CARD HEADER & BADGES
+   ========================================== */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.card-title {
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Custom Status Tags */
+.custom-tag {
+  border: none !important;
+  padding: 4px 10px !important;
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.custom-tag.green {
+  background: rgba(99, 102, 241, 0.15) !important;
+  color: #818cf8 !important;
+}
+
+.custom-tag.orange {
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #fbbf24 !important;
+}
+
+.custom-tag.teal {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: #34d399 !important;
+}
+
+/* ==========================================
+   CARD 1: CIRCLE PROGRESS LAYOUT
+   ========================================== */
+.circle-layout {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.circle-layout .ant-progress-text {
+  color: #f8fafc !important;
+  font-weight: 700;
+  font-size: 18px !important;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  color: #f8fafc;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 !important;
+}
+
+.stat-desc {
+  color: #64748b;
+  font-size: 12px;
+  margin: 2px 0 6px 0 !important;
+}
+
+.stat-trend {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.stat-trend.positive {
+  color: #34d399;
+}
+
+/* ==========================================
+   CARD 2 & 3: LINEAR PROGRESS LAYOUT
+   ========================================== */
+.linear-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.stat-value-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.stat-main-text {
+  color: #f8fafc;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stat-sub-text {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.card-footer-info {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.card-footer-info b {
+  color: #f8fafc;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* Tablets / Medium Displays (<= 1024px) */
+@media screen and (max-width: 1024px) {
+  .stats-container {
+    padding: 16px;
+  }
+
+  .stat-card {
+    min-height: 200px !important;
+  }
+
+  .circle-layout {
+    gap: 12px;
+  }
+
+  .stat-number {
+    font-size: 20px;
+  }
+}
+
+/* Mobile Screens (<= 576px) */
+@media screen and (max-width: 576px) {
+  .stats-container {
+    padding: 12px;
+  }
+
+  .stat-card {
+    min-height: auto !important;
+  }
+
+  .card-header {
+    flex-wrap: wrap;
+  }
+
+  .circle-layout {
+    justify-content: flex-start;
+    padding: 8px 0;
+  }
+
+  .stat-main-text {
+    font-size: 16px;
+  }
+
+  .stat-number {
+    font-size: 18px;
+  }
+}
