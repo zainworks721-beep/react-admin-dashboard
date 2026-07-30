@@ -5,15 +5,12 @@
   padding: 24px;
 }
 
-/* Antd Grid Flexbox Fix for Equal Height Columns */
+
 .stats-container .ant-row {
   display: flex !important;
-  flex-wrap: wrap;
+
 }
 
-.stats-container .ant-col {
-  display: flex;
-}
 
 /* ==========================================
    CARD BASE STYLES (SAME HEIGHT & WIDTH)

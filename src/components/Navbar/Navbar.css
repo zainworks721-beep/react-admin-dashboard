@@ -9,17 +9,6 @@
   border-bottom: none !important;
 }
 
-.main-menu .ant-menu-item:hover {
-  color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-radius: 10px;
-}
-
-.main-menu .ant-menu-item-selected {
-  color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-radius: 10px;
-}
 
 .custom-navbar {
   display: flex;

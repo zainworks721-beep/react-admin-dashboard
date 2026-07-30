@@ -13,7 +13,7 @@ function App() {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Navbar><UserModal /> </Navbar>
-      <Content style={{ padding: '20px 50px' }}>
+      <Content>
         <StatCards />
         <UserTable />
       </Content>

@@ -81,7 +81,7 @@ const StatCards = () => {
             </div>
           </Card>
         </Col>
-\
+
         <Col xs={24} sm={12} lg={8}>
           <Card className="stat-card" bordered={false}>
             <div className="card-header">
