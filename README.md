@@ -68,7 +68,7 @@ This project uses more than **10 Ant Design components**, including:
 
 ## 🌐 Live Demo
 
-**Live URL:** *Add Live URL Here*
+https://react-admin-dashboard-goz1.vercel.app/
 
 ---
 
