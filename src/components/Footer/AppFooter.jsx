@@ -10,7 +10,6 @@ const AppFooter = () => {
         <Footer className="premium-dashboard-footer">
             <div className="footer-wrapper">
 
-                {/* Left Side: Brand, Version & System Status */}
                 <div className="footer-left">
                     <span className="footer-logo-badge">Pro Admin</span>
                     <span className="footer-copyright">
@@ -22,7 +21,6 @@ const AppFooter = () => {
                     </div>
                 </div>
 
-                {/* Right Side: Links & Premium Social Buttons */}
                 <div className="footer-right">
                     <a href="#docs" className="footer-nav-link">Docs</a>
                     <a href="#api" className="footer-nav-link">API Reference</a>

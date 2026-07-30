@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Layout, Menu, Button, Drawer, Avatar, Space, Dropdown } from "antd";
+import { Layout, Menu, Button, Drawer, Avatar, Dropdown } from "antd";
 import {
     UserOutlined,
     DashboardOutlined,
     TeamOutlined,
     FileTextOutlined,
     SettingOutlined,
-    PlusOutlined,
     MenuOutlined,
     BellOutlined,
     LogoutOutlined,

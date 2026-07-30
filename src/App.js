@@ -7,7 +7,7 @@ import UserModal from './components/UserModal/UserModal';
 import "./App.css"
 import AppFooter from './components/Footer/AppFooter';
 
-const { Content, Footer } = Layout;
+const { Content, } = Layout;
 
 function App() {
   return (

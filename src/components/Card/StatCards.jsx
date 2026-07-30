@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Progress, Tag, Row, Col, Space } from 'antd';
+import { Card, Progress, Tag, Row, Col, } from 'antd';
 import { 
   CheckCircleOutlined, 
   FireOutlined, 
@@ -12,7 +12,7 @@ const StatCards = () => {
   return (
     <div className="stats-container">
       <Row gutter={[20, 20]}>
-        {/* Card 1: Task Progress */}
+     
         <Col xs={24} sm={12} lg={8}>
           <Card className="stat-card" bordered={false}>
             <div className="card-header">
@@ -48,7 +48,6 @@ const StatCards = () => {
           </Card>
         </Col>
 
-        {/* Card 2: Project Performance */}
         <Col xs={24} sm={12} lg={8}>
           <Card className="stat-card" bordered={false}>
             <div className="card-header">
@@ -82,8 +81,7 @@ const StatCards = () => {
             </div>
           </Card>
         </Col>
-
-        {/* Card 3: Quick Overview (Bonus Card for balanced layout) */}
+\
         <Col xs={24} sm={12} lg={8}>
           <Card className="stat-card" bordered={false}>
             <div className="card-header">
